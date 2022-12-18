@@ -1,0 +1,9 @@
+
+#MainContainer{
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    background-color: red;
+    width: 960px;
+    margin: auto;
+    min-height: 100%;
+}
