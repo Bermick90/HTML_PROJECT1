@@ -3,7 +3,47 @@
 
 body { 
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
+  
+}
+.MainContainer{
+  min-width: 1920px;
+  max-width: 1920px;
+  background-image: url("backgroundmain.jpg");
+  background-repeat: no-repeat;
+  
+  height: 100%;
+
+}
+.HasloReklamowe{
+  
+  width: 577px;
+  height: 46.11px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  padding-top: 178px;
+  padding-left: 94px;
+
+}
+.HasloReklamowe2{
+  
+  padding-top: 270px;
+}
+
+.button_oferta{
+  box-sizing: border-box;
+  
+  width: 164px;
+  height: 40.74px;
+  
+  border: 3px solid #FFFFFF;
+
 }
 
 .header {
@@ -14,7 +54,7 @@ body {
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -30,12 +70,12 @@ body {
 }
 
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #4E4E4E;
+  color: white;
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #4E4E4E;
   color: white;
 }
 
@@ -54,3 +94,5 @@ body {
     float: none;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
