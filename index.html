@@ -5,58 +5,104 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- tutaj reset css "czysta kartka"-->
+    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <title>Projekt Zaliczeniowy #1</title>
 
 </head>
 
 
-   
+   <!-- id jest unikatowe,dojakieosc wybranego elemntu-->
+                <!-- powinny byc klasy!-->
     <body>
-        
-        <div class="MainContainer">
-            <div class="header">
-                <a href="#default" class="logo">Moja Firma</a>
-                <div class="header-right">
-                <a class="active" href="#onas">o nas</a>
-                <a href="#oferta">oferta</a>
-                <a href="#kontakt">kontakt</a>
+        <!-- jak wycentrowac te napisy w navie?-->
+        <nav class="nav">
+                <div class="Container">
+                    <div class="MenuLeft">Moja Firma</div>
+                    <ul >
+                        <!--  wyswietla sie w kolejnosci dodania linii???-->
+                        
+                        <li><a href="#kontakt" class="MenuRight">kontakt</a></li>
+                        <li><a href="#oferta" class="MenuRight">oferta</a></li>
+                        <li><a href="#o_nas" class="MenuRight">o nas</a></li>
+                    </ul>
                 </div>
+            
+        </nav>
+        <header class="Header Container">
+            <!-- czy obrazek ma byc wyswietlany w calosci czy wystarczy czesc?-->
+            <div class="Container">
+                <!-- wlasciwosci klasy hasloreklamowe1 przesuwaja caly header?-->
+                <h1 class="HasloReklamowe1">Nasza Firma oferuje najwyższej</br> jakości produkty.</h1>
+                <p class="HasloReklamowe2">Nie wierz nam na słowo - sprawdź</p>
+                <button class="button">oferta</button>
+
+
             </div>
 
-            <div class="HasloReklamowe">
-                <p>Nasza Firma oferuje najwyższej jakości produkty.</p>
-
-                <div class="HasloReklamowe2">
-                    <p>Nie wierz nam na słowo - sprawdź</p>
-                </div>
-
-                    <a href="#" class="button_oferta">oferta</a>
+        </header>
+        <main>
+            <section >
+                <div class="NasiSpecjalisci_Section Container">
+                    <h2 class="h2">Nasi specjaliści</h2>
+                    <div class="twoColumns">
+                        <div class="left">
+                          <img src="sniper1.jpg" class="responsive photo" width="100" height="100">
+                        </div>
+                        <div class="right responsive text_left">
+                            <h3>#1 Mate - Sniper [ support ]</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        </div>
+                      </div>
                     
+                <!--   -->
+               
+                    <div class="twoColumns">
+                       
+                        <div  class="responsive text_right">
+                            <h3>#2 Mate - Demoman [ marine ]</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        </div>
 
-            </div>
+                        <div class="right">
+                           
+                            <img src="demo1.jpg" class="responsive photo" width="100" height="100">
+                          </div>
+                      </div>
 
+                </div>
+                
+            </section>
+            <section>
+                <div class="Container offer">
+                    <h2 class="offer_t">Czym zajmuje się nasza firma?</h2>
+                    
+                        <div class="outer">
+                            <div class="row">
+                              <div class="item"></div>
+                              <div class="item"></div>
+                              <div class="item"></div>
+                            </div>
+                           
+                            <div class="row">
+                              <div class="item"></div>
+                              <div class="item"></div>
+                              <div class="item"></div>
+                            </div>
+                          </div>
 
-        </div>    
+                   
+                </div>
+            </section>
 
-
-
-
-        
-
-
-    
-      
-      
-
-   
-    
-   
-    
+        </main>
+        <footer>
+            <!--dodawanie ikon ?-->
+        </footer>
     </body>
     </html>
     
