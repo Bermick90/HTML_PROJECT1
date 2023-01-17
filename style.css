@@ -60,7 +60,7 @@ h4 {
 }
 
 .header {
-  background-image: url('backgroundmain.jpg');
+  background-image: url(img/backgroundmain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -86,6 +86,14 @@ h4 {
   line-height: 21px;
   display: flex;
   align-items: center;
+}
+
+.specDesc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .button {
@@ -157,6 +165,13 @@ h4 {
 #footer_desc p {
   font-weight: 700;
   flex-grow: 1;
+}
+.footer_font {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .white {
@@ -240,11 +255,11 @@ h4 {
 }
 
 .photo_1 {
-  background-image: url(sniper2.jpg);
+  background-image: url(img/sniper2.jpg);
 }
 
 .photo_2 {
-  background-image: url(demo2.jpg);
+  background-image: url(img/demo2.jpg);
 }
 
 .person {
