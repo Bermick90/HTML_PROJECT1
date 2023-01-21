@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-family: Roboto;
+  font-family: 'Roboto';
   scroll-behavior: smooth;
 }
 
@@ -68,8 +67,6 @@ h4 {
 
 .adv {
   max-width: 600px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -79,8 +76,6 @@ h4 {
 
 .adv2 {
   margin-top: 62px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -89,8 +84,6 @@ h4 {
 }
 
 .specDesc {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -108,8 +101,6 @@ h4 {
   text-decoration: none;
   display: inline-block;
   transition: 1s;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -122,7 +113,13 @@ h4 {
 }
 
 .menuRight {
-  display: none;
+  display: flex;
+  float: right;
+  color: white;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .menuLeft {
@@ -130,8 +127,6 @@ h4 {
   display: flex;
   color: white;
   justify-content: space-between;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -167,8 +162,6 @@ h4 {
   flex-grow: 1;
 }
 .footer_font {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -179,8 +172,6 @@ h4 {
 }
 
 .footer_font {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -192,7 +183,7 @@ h4 {
 }
 
 .services {
-  width: 30%;
+  width: 75%;
   margin: 0 auto;
   padding: 60px 0;
   display: flex;
@@ -227,27 +218,35 @@ h4 {
   left: -11px;
 }
 
+.services-single:hover {
+  transform: scale(1.05);
+}
+
 .contact {
   cursor: not-allowed;
 }
 
 .teamContainer {
   color: black;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
 }
 
 .our-team {
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 60px;
 }
 
 .our-team:not(:last-child) {
   margin-bottom: 60px;
+}
+
+.our-team:nth-of-type(even) {
+  text-align: right;
+  flex-direction: row-reverse;
 }
 
 .space-bottom {
@@ -274,44 +273,4 @@ h4 {
 
 #specialist {
   padding: 60px 0;
-}
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 960px;
-  }
-
-  .menuRight {
-    display: flex;
-    float: right;
-    color: white;
-    justify-content: space-between;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .our-team {
-    flex-direction: row;
-  }
-
-  .our-team:nth-of-type(even) {
-    text-align: right;
-    flex-direction: row-reverse;
-  }
-
-  .services {
-    width: 75%;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 63px;
-  }
-
-  .services-single:hover {
-    transform: scale(1.05);
-  }
 }
